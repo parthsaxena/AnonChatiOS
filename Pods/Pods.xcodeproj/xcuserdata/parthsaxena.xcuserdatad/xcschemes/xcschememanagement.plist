@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-AnonChat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AnonChatTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AnonChatUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Socket.IO-Client-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1DE487A3401D3545BCF4AF1BA843A35E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A36DFA2996E2427097F9A0BF12062FF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A753590D1118CD173712B22EA7568A80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9C61081C8A6366CD8DDEB22A3A4E9BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

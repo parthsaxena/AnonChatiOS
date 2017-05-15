@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08012EB75EE4AB77185EAFA0 /* Pods_AnonChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E755F043A65A8736BD6CD4BE /* Pods_AnonChatTests.framework */; };
+		4CD904A59185FB78616DDF9D /* Pods_AnonChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3F8DB8C945C1B57764122E /* Pods_AnonChat.framework */; };
+		8B1E885B1EC429840028CF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E885A1EC429840028CF88 /* AppDelegate.swift */; };
+		8B1E885D1EC429840028CF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E885C1EC429840028CF88 /* ViewController.swift */; };
+		8B1E88621EC429840028CF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1E88611EC429840028CF88 /* Assets.xcassets */; };
+		8B1E88651EC429840028CF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1E88631EC429840028CF88 /* LaunchScreen.storyboard */; };
+		8B1E88701EC429840028CF88 /* AnonChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E886F1EC429840028CF88 /* AnonChatTests.swift */; };
+		8B1E887B1EC429840028CF88 /* AnonChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E887A1EC429840028CF88 /* AnonChatUITests.swift */; };
+		8B1E88891EC429E10028CF88 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E88881EC429E10028CF88 /* SocketIOManager.swift */; };
+		8B1E888C1EC42C790028CF88 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E888A1EC42C790028CF88 /* ChatViewController.swift */; };
+		8B1E888D1EC42C790028CF88 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E888B1EC42C790028CF88 /* UsersViewController.swift */; };
+		8B1E88911EC42C820028CF88 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E888E1EC42C820028CF88 /* BaseCell.swift */; };
+		8B1E88921EC42C820028CF88 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E888F1EC42C820028CF88 /* ChatCell.swift */; };
+		8B1E88931EC42C820028CF88 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E88901EC42C820028CF88 /* UserCell.swift */; };
+		8B1E88971EC437C90028CF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1E88941EC42E7D0028CF88 /* Main.storyboard */; };
+		8B1E889A1EC438E90028CF88 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1E88981EC438E90028CF88 /* ChatCell.xib */; };
+		8B1E889B1EC438E90028CF88 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1E88991EC438E90028CF88 /* UserCell.xib */; };
+		B07A9E0BEAB5F9C39A7B0CA8 /* Pods_AnonChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11E73CC3765958CC50A2B9A /* Pods_AnonChatUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B1E886C1EC429840028CF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1E884F1EC429840028CF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1E88561EC429840028CF88;
+			remoteInfo = AnonChat;
+		};
+		8B1E88771EC429840028CF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1E884F1EC429840028CF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1E88561EC429840028CF88;
+			remoteInfo = AnonChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32C0CE530D4EE04C5753D299 /* Pods-AnonChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnonChat/Pods-AnonChat.release.xcconfig"; sourceTree = "<group>"; };
+		6CE24EB8C191FC21F22C7F64 /* Pods-AnonChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnonChatUITests/Pods-AnonChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8187CF84BA245A3B984A528A /* Pods-AnonChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnonChat/Pods-AnonChat.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1E88571EC429840028CF88 /* AnonChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnonChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1E885A1EC429840028CF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B1E885C1EC429840028CF88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B1E885F1EC429840028CF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-old.storyboard"; sourceTree = "<group>"; };
+		8B1E88611EC429840028CF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1E88641EC429840028CF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B1E88661EC429840028CF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1E886B1EC429840028CF88 /* AnonChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnonChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1E886F1EC429840028CF88 /* AnonChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonChatTests.swift; sourceTree = "<group>"; };
+		8B1E88711EC429840028CF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1E88761EC429840028CF88 /* AnonChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnonChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1E887A1EC429840028CF88 /* AnonChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonChatUITests.swift; sourceTree = "<group>"; };
+		8B1E887C1EC429840028CF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1E88881EC429E10028CF88 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		8B1E888A1EC42C790028CF88 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8B1E888B1EC42C790028CF88 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		8B1E888E1EC42C820028CF88 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		8B1E888F1EC42C820028CF88 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		8B1E88901EC42C820028CF88 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		8B1E88941EC42E7D0028CF88 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = AnonChat/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		8B1E88981EC438E90028CF88 /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		8B1E88991EC438E90028CF88 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		A77C5E6F76F8D9300343CA13 /* Pods-AnonChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnonChatTests/Pods-AnonChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		C11E73CC3765958CC50A2B9A /* Pods_AnonChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnonChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4688C537EAAF9481975FF98 /* Pods-AnonChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnonChatTests/Pods-AnonChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD050B5A4850560C1E2B30C8 /* Pods-AnonChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnonChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnonChatUITests/Pods-AnonChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E755F043A65A8736BD6CD4BE /* Pods_AnonChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnonChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3F8DB8C945C1B57764122E /* Pods_AnonChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnonChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B1E88541EC429840028CF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD904A59185FB78616DDF9D /* Pods_AnonChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1E88681EC429840028CF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08012EB75EE4AB77185EAFA0 /* Pods_AnonChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1E88731EC429840028CF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07A9E0BEAB5F9C39A7B0CA8 /* Pods_AnonChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C734AA89A2697C5860E533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF3F8DB8C945C1B57764122E /* Pods_AnonChat.framework */,
+				E755F043A65A8736BD6CD4BE /* Pods_AnonChatTests.framework */,
+				C11E73CC3765958CC50A2B9A /* Pods_AnonChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B1E884E1EC429840028CF88 = {
+			isa = PBXGroup;
+			children = (
+				8B1E88591EC429840028CF88 /* AnonChat */,
+				8B1E886E1EC429840028CF88 /* AnonChatTests */,
+				8B1E88791EC429840028CF88 /* AnonChatUITests */,
+				8B1E88581EC429840028CF88 /* Products */,
+				E0B27B679F2CC25C09DEBA63 /* Pods */,
+				09C734AA89A2697C5860E533 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B1E88581EC429840028CF88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1E88571EC429840028CF88 /* AnonChat.app */,
+				8B1E886B1EC429840028CF88 /* AnonChatTests.xctest */,
+				8B1E88761EC429840028CF88 /* AnonChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B1E88591EC429840028CF88 /* AnonChat */ = {
+			isa = PBXGroup;
+			children = (
+				8B1E88881EC429E10028CF88 /* SocketIOManager.swift */,
+				8B1E885A1EC429840028CF88 /* AppDelegate.swift */,
+				8B1E885C1EC429840028CF88 /* ViewController.swift */,
+				8B1E888A1EC42C790028CF88 /* ChatViewController.swift */,
+				8B1E888B1EC42C790028CF88 /* UsersViewController.swift */,
+				8B1E888E1EC42C820028CF88 /* BaseCell.swift */,
+				8B1E888F1EC42C820028CF88 /* ChatCell.swift */,
+				8B1E88901EC42C820028CF88 /* UserCell.swift */,
+				8B1E88941EC42E7D0028CF88 /* Main.storyboard */,
+				8B1E885E1EC429840028CF88 /* Main-old.storyboard */,
+				8B1E88611EC429840028CF88 /* Assets.xcassets */,
+				8B1E88631EC429840028CF88 /* LaunchScreen.storyboard */,
+				8B1E88981EC438E90028CF88 /* ChatCell.xib */,
+				8B1E88991EC438E90028CF88 /* UserCell.xib */,
+				8B1E88661EC429840028CF88 /* Info.plist */,
+			);
+			path = AnonChat;
+			sourceTree = "<group>";
+		};
+		8B1E886E1EC429840028CF88 /* AnonChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B1E886F1EC429840028CF88 /* AnonChatTests.swift */,
+				8B1E88711EC429840028CF88 /* Info.plist */,
+			);
+			path = AnonChatTests;
+			sourceTree = "<group>";
+		};
+		8B1E88791EC429840028CF88 /* AnonChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B1E887A1EC429840028CF88 /* AnonChatUITests.swift */,
+				8B1E887C1EC429840028CF88 /* Info.plist */,
+			);
+			path = AnonChatUITests;
+			sourceTree = "<group>";
+		};
+		E0B27B679F2CC25C09DEBA63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8187CF84BA245A3B984A528A /* Pods-AnonChat.debug.xcconfig */,
+				32C0CE530D4EE04C5753D299 /* Pods-AnonChat.release.xcconfig */,
+				D4688C537EAAF9481975FF98 /* Pods-AnonChatTests.debug.xcconfig */,
+				A77C5E6F76F8D9300343CA13 /* Pods-AnonChatTests.release.xcconfig */,
+				DD050B5A4850560C1E2B30C8 /* Pods-AnonChatUITests.debug.xcconfig */,
+				6CE24EB8C191FC21F22C7F64 /* Pods-AnonChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B1E88561EC429840028CF88 /* AnonChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1E887F1EC429840028CF88 /* Build configuration list for PBXNativeTarget "AnonChat" */;
+			buildPhases = (
+				5A100D7B55875BABD61712D8 /* [CP] Check Pods Manifest.lock */,
+				8B1E88531EC429840028CF88 /* Sources */,
+				8B1E88541EC429840028CF88 /* Frameworks */,
+				8B1E88551EC429840028CF88 /* Resources */,
+				F0DCB43FC8020454DC44D7FE /* [CP] Embed Pods Frameworks */,
+				EA54B8BE8B3FB879F5BF9FCB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnonChat;
+			productName = AnonChat;
+			productReference = 8B1E88571EC429840028CF88 /* AnonChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B1E886A1EC429840028CF88 /* AnonChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1E88821EC429840028CF88 /* Build configuration list for PBXNativeTarget "AnonChatTests" */;
+			buildPhases = (
+				87C25F2D7542E111551CE5A2 /* [CP] Check Pods Manifest.lock */,
+				8B1E88671EC429840028CF88 /* Sources */,
+				8B1E88681EC429840028CF88 /* Frameworks */,
+				8B1E88691EC429840028CF88 /* Resources */,
+				4FB01BF7ED83AFE07E91B8C6 /* [CP] Embed Pods Frameworks */,
+				C7BDFD40834DC63D421CF069 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1E886D1EC429840028CF88 /* PBXTargetDependency */,
+			);
+			name = AnonChatTests;
+			productName = AnonChatTests;
+			productReference = 8B1E886B1EC429840028CF88 /* AnonChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B1E88751EC429840028CF88 /* AnonChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1E88851EC429840028CF88 /* Build configuration list for PBXNativeTarget "AnonChatUITests" */;
+			buildPhases = (
+				2EE4CCE56F70D6AFEDC52A40 /* [CP] Check Pods Manifest.lock */,
+				8B1E88721EC429840028CF88 /* Sources */,
+				8B1E88731EC429840028CF88 /* Frameworks */,
+				8B1E88741EC429840028CF88 /* Resources */,
+				D35DED78332F6DAFC0A2C986 /* [CP] Embed Pods Frameworks */,
+				D7790D8AA9A0AA49C4928FBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B1E88781EC429840028CF88 /* PBXTargetDependency */,
+			);
+			name = AnonChatUITests;
+			productName = AnonChatUITests;
+			productReference = 8B1E88761EC429840028CF88 /* AnonChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B1E884F1EC429840028CF88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Parth Saxena";
+				TargetAttributes = {
+					8B1E88561EC429840028CF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 69TNSUL7ZG;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					8B1E886A1EC429840028CF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 69TNSUL7ZG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B1E88561EC429840028CF88;
+					};
+					8B1E88751EC429840028CF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 69TNSUL7ZG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B1E88561EC429840028CF88;
+					};
+				};
+			};
+			buildConfigurationList = 8B1E88521EC429840028CF88 /* Build configuration list for PBXProject "AnonChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B1E884E1EC429840028CF88;
+			productRefGroup = 8B1E88581EC429840028CF88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B1E88561EC429840028CF88 /* AnonChat */,
+				8B1E886A1EC429840028CF88 /* AnonChatTests */,
+				8B1E88751EC429840028CF88 /* AnonChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B1E88551EC429840028CF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1E88971EC437C90028CF88 /* Main.storyboard in Resources */,
+				8B1E889A1EC438E90028CF88 /* ChatCell.xib in Resources */,
+				8B1E88651EC429840028CF88 /* LaunchScreen.storyboard in Resources */,
+				8B1E88621EC429840028CF88 /* Assets.xcassets in Resources */,
+				8B1E889B1EC438E90028CF88 /* UserCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1E88691EC429840028CF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1E88741EC429840028CF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EE4CCE56F70D6AFEDC52A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FB01BF7ED83AFE07E91B8C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnonChatTests/Pods-AnonChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A100D7B55875BABD61712D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87C25F2D7542E111551CE5A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BDFD40834DC63D421CF069 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnonChatTests/Pods-AnonChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35DED78332F6DAFC0A2C986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnonChatUITests/Pods-AnonChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7790D8AA9A0AA49C4928FBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnonChatUITests/Pods-AnonChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA54B8BE8B3FB879F5BF9FCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnonChat/Pods-AnonChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DCB43FC8020454DC44D7FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnonChat/Pods-AnonChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B1E88531EC429840028CF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1E88931EC42C820028CF88 /* UserCell.swift in Sources */,
+				8B1E885D1EC429840028CF88 /* ViewController.swift in Sources */,
+				8B1E88891EC429E10028CF88 /* SocketIOManager.swift in Sources */,
+				8B1E888D1EC42C790028CF88 /* UsersViewController.swift in Sources */,
+				8B1E888C1EC42C790028CF88 /* ChatViewController.swift in Sources */,
+				8B1E88921EC42C820028CF88 /* ChatCell.swift in Sources */,
+				8B1E88911EC42C820028CF88 /* BaseCell.swift in Sources */,
+				8B1E885B1EC429840028CF88 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1E88671EC429840028CF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1E88701EC429840028CF88 /* AnonChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1E88721EC429840028CF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1E887B1EC429840028CF88 /* AnonChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B1E886D1EC429840028CF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1E88561EC429840028CF88 /* AnonChat */;
+			targetProxy = 8B1E886C1EC429840028CF88 /* PBXContainerItemProxy */;
+		};
+		8B1E88781EC429840028CF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B1E88561EC429840028CF88 /* AnonChat */;
+			targetProxy = 8B1E88771EC429840028CF88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B1E885E1EC429840028CF88 /* Main-old.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1E885F1EC429840028CF88 /* Base */,
+			);
+			name = "Main-old.storyboard";
+			sourceTree = "<group>";
+		};
+		8B1E88631EC429840028CF88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1E88641EC429840028CF88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B1E887D1EC429840028CF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B1E887E1EC429840028CF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B1E88801EC429840028CF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8187CF84BA245A3B984A528A /* Pods-AnonChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69TNSUL7ZG;
+				INFOPLIST_FILE = AnonChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthsaxena.AnonChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8B1E88811EC429840028CF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C0CE530D4EE04C5753D299 /* Pods-AnonChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69TNSUL7ZG;
+				INFOPLIST_FILE = AnonChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthsaxena.AnonChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8B1E88831EC429840028CF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4688C537EAAF9481975FF98 /* Pods-AnonChatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 69TNSUL7ZG;
+				INFOPLIST_FILE = AnonChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthsaxena.AnonChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnonChat.app/AnonChat";
+			};
+			name = Debug;
+		};
+		8B1E88841EC429840028CF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77C5E6F76F8D9300343CA13 /* Pods-AnonChatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 69TNSUL7ZG;
+				INFOPLIST_FILE = AnonChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthsaxena.AnonChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnonChat.app/AnonChat";
+			};
+			name = Release;
+		};
+		8B1E88861EC429840028CF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD050B5A4850560C1E2B30C8 /* Pods-AnonChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 69TNSUL7ZG;
+				INFOPLIST_FILE = AnonChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthsaxena.AnonChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AnonChat;
+			};
+			name = Debug;
+		};
+		8B1E88871EC429840028CF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE24EB8C191FC21F22C7F64 /* Pods-AnonChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 69TNSUL7ZG;
+				INFOPLIST_FILE = AnonChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parthsaxena.AnonChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AnonChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B1E88521EC429840028CF88 /* Build configuration list for PBXProject "AnonChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1E887D1EC429840028CF88 /* Debug */,
+				8B1E887E1EC429840028CF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1E887F1EC429840028CF88 /* Build configuration list for PBXNativeTarget "AnonChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1E88801EC429840028CF88 /* Debug */,
+				8B1E88811EC429840028CF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1E88821EC429840028CF88 /* Build configuration list for PBXNativeTarget "AnonChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1E88831EC429840028CF88 /* Debug */,
+				8B1E88841EC429840028CF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1E88851EC429840028CF88 /* Build configuration list for PBXNativeTarget "AnonChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1E88861EC429840028CF88 /* Debug */,
+				8B1E88871EC429840028CF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B1E884F1EC429840028CF88 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_AnonChatUITests {
+  umbrella header "Pods-AnonChatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
